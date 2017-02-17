@@ -6,7 +6,11 @@
 # server "example.com", user: "deploy", roles: %w{app db web}, my_property: :my_value
 # server "example.com", user: "deploy", roles: %w{app web}, other_property: :other_value
 # server "db.example.com", user: "deploy", roles: %w{db}
-
+server "54.203.8.79", user: "ubuntu", roles: %w{app db web}
+set :nginx_server_name, 'dev.jwnc.net'
+set :stage, 'production'
+set :branch, 'master'
+set :deploy_to, '/home/ubuntu/rails_puma_capistrano_test_production'
 
 
 # role-based syntax
