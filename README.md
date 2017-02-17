@@ -1,0 +1,1 @@
+# rails_puma_capistrano_test
